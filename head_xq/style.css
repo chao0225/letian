@@ -1,0 +1,449 @@
+﻿
+body{
+	margin:0;
+	padding:0;
+}
+
+
+/*　スライダーポインターNEWマーク　*/
+div.slider_pointer_new{
+	position:relative;
+	width:980px;
+	font-size:7px;
+	font-weight:bold;
+	text-indent:261px;/*12px単位*/
+	top:-38px;/*-50px*/
+	color:#f00;
+}
+div.slider_pointer_new span{
+	display:block;
+	width:23px;
+	float:left;
+}
+
+/*　一覧を見るテキストリンク　*/
+div.feature_allview{
+	position:relative;
+	top:-20px;
+	font-size:12px;
+	margin-left:721px;
+	font-weight:bold;
+	z-index:9999;
+	width:100px;;
+}
+
+div.feature_allview a{
+	color:#555;
+	width:100px;
+	z-index:9999;
+
+ }
+
+div.feature_allview a:hover{
+	text-decoration:underline;
+
+ }
+ 
+@media only screen and (max-width:1000px){
+div#height_banner{
+	display:none;
+}
+}
+
+div#index_head_banner{
+	width:100%;
+	background-color:#c00000;
+	text-align:center;
+	height:auto;
+	margin-top: 10px;
+	display: inline-block;
+	text-align: center;
+	/*background:url(../images/100_head.gif)repeat-x;*/
+}
+
+/*とりあえず新追加*/
+
+
+@font-face {
+	font-family: basefont;
+	src: url(../fonts/base.woff) format("truetype");
+	src: url('../fonts/base.eot?#iefix') format('embedded-opentype'),           
+	url('../fonts/base.svg#YourWebFontName') format('svg'); /* Legacy iOS */ 
+}
+body {
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+div.pickup_area{
+	width:800px;
+}
+
+div.pickup_area h2{
+	font-family: basefont, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	border-top:1px solid #000;
+	text-align:center;
+	padding:30px 0;
+	font-size:26px;
+	letter-spacing:8px;
+}
+
+div.pickup_area li{
+		width:256px;
+		float:left;
+		padding:5px 0 10px 16px;
+		position:relative;
+}
+	div.pickup_area li:first-child{
+		padding-left:0;
+	}
+div.pickup_area li img{
+	width:100%;
+}
+
+	div.header_wrap{
+		width:100%;
+	}
+	
+	div.headtop_wrap{
+		width:100%;
+		background-color:#c3b09f;
+	}
+	div.headtop_inner_wrap{
+		width:980px;
+		font-size:13px;
+		padding:4px;
+		overflow:hidden;
+		margin:0 auto;
+	}
+	div.headtop_inner_wrap p#soy{
+		float:left;
+	}
+	div.headtop_inner_wrap p#comment{
+		float:right;
+	}
+	div.headtop_inner_wrap p span{
+		color:#F00;
+	}
+	
+/*ロゴエリア*/
+	div.imgs{ margin: 0 auto; padding-left:220px;}
+	div.logo_area_wrap{
+		position:relative;
+		width:980px;
+		margin:0 auto;
+	}
+	div.logo_area_wrap div.logo{
+		width:750px;
+		padding: 35px 0 10px 88px;
+	}
+
+	div.sub_menu_wrap{
+		position:relative;
+		float:right;
+		padding-right: 100px;
+    top: -60px;
+	}
+	div.logo_area_wrap span.sub_menu_emb{
+		display:block;
+		width:32px;
+		height:32px;
+		float:left;
+		padding-right:30px;
+		position:relative;
+		top:1px;
+	}
+	
+	div.logo_area_wrap span:nth-child(2){
+		/*padding-right:34px;*/
+	}
+	
+	div.logo_area_wrap span.sub_menu{
+		position:relative;
+		display:block;
+		float:left;
+	}
+	div.logo_area_wrap span.sub_menu a{
+		display:block;
+		width:25px;
+		height:25px;
+		float:left;
+		padding:0 0 0 15px;
+		
+	}
+	
+	
+	div.logo_area_wrap span#icon_review{
+		position:relative;
+		background:url(../images/icon_review.svg) no-repeat;
+		background-size:contain;
+		background-position:0px 0px;
+		top:5px;
+	}
+
+	div.logo_area_wrap span#icon_mail{
+		position:relative;
+		background:url(../images/icon_mail.svg) no-repeat;
+		background-position:0px 0px;
+		top:5px;
+	}
+
+	div.logo_area_wrap span#icon_cart{
+		position:relative;
+		background:url(../images/icon_cart.svg) no-repeat;
+		background-position:0px 0px;
+		top:5px;
+	}
+
+	div.logo_area_wrap span#icon_rakuten{
+		position:relative;
+		background:url(../images/icon_rakuten.png) no-repeat;
+		background-position:0px 0px;
+		top:5px;
+	}
+
+	span.sub_menu a span#pop_text{
+      position:absolute;
+      display: none;
+      width: 45px;
+      top: -30px;
+      left: -17px;
+      padding: 3px 5px;
+      border-radius: 2px;
+      background:#eee;
+      color: #000;
+			font-size:11px;
+			text-align:center;
+	}
+  span.sub_menu a span#pop_text:after {
+      position:absolute;
+      width: 0;
+      height: 0;
+      left: 8px;
+      top: 16px;
+      margin-left: 14px;
+			border: 10px solid transparent;
+			border-top: 10px solid #eee;
+      border-width: 6px;
+      pointer-events: none;
+      content: " ";
+  }
+	span.sub_menu a:hover span#pop_text{
+      display:inline-block;
+      position:absolute;
+	}
+/*****/
+/*--------------- GLOBAL NAVI ---------------*/
+#navi_global {
+  clear: both;
+  overflow: hidden;
+  padding-top: 19px;
+  padding-left:140px;
+  width: 960px;
+  margin: 0 auto 20px;
+  /* width */
+}
+#navi_global li {
+  float: left;
+}
+#navi_global a {
+	
+  display: block;
+  height: 43px;
+  text-indent: -9999px;
+  background-image: url(https://image.rakuten.co.jp/ceen/cabinet/06027252/1-1.jpg);
+  background-repeat: no-repeat;
+}
+#navi_global #gn_01 a {
+  width: 114px;
+  background-position: 0px   0px;
+}
+#navi_global #gn_01 a:hover {
+  background-position: 0px  -48px;
+}
+#navi_global #gn_02 a {
+  width: 113px;
+  background-position: -118px   0px;
+}
+#navi_global #gn_02 a:hover {
+  background-position: -118px  -48px;
+}
+#navi_global #gn_03 a {
+  width: 119px;
+  background-position: -231px   0px;
+}
+#navi_global #gn_03 a:hover {
+  background-position: -231px  -48px;
+}
+#navi_global #gn_04 a {
+  width: 111px;
+  background-position: -356px   0px;
+}
+#navi_global #gn_04 a:hover {
+  background-position: -356px  -48px;
+}
+#navi_global #gn_05 a {
+  width: 126px;
+  background-position: -467px   0px;
+}
+#navi_global #gn_05 a:hover {
+  background-position: -467px  -48px;
+}
+#navi_global #gn_06 a {
+  width: 136px;
+  background-position: -593px   0px;
+}
+#navi_global #gn_06 a:hover {
+  background-position: -593px  -48px;
+}
+#navi_global #gn_07 a {
+  width: 136px;
+  background-position: -729px   0px;
+}
+#navi_global #gn_07 a:hover {
+  background-position: -729px  -48px;
+}
+#navi_global #gn_08 a {
+  width: 105px;
+  background-position: -865px   0px;
+}
+#navi_global #gn_08 a:hover {
+  background-position: -865px  -48px;
+}
+#navi_global #gn_09 a {
+  width: 114px;
+  background-position: 0px -43px;
+}
+#navi_global #gn_09 a:hover {
+  background-position: 0px -129px;
+}
+#navi_global #gn_10 a {
+  width: 113px;
+  background-position: -118px -43px;
+}
+#navi_global #gn_10 a:hover {
+  background-position: -118px -129px;
+}
+#navi_global #gn_11 a {
+  width: 119px;
+  background-position: -231px -43px;
+}
+#navi_global #gn_11 a:hover {
+  background-position: -231px -129px;
+}
+#navi_global #gn_12 a {
+  width: 111px;
+  background-position: -356px -43px;
+}
+#navi_global #gn_12 a:hover {
+  background-position: -356px -129px;
+}
+#navi_global #gn_13 a {
+  width: 126px;
+  background-position: -467px -43px;
+}
+#navi_global #gn_13 a:hover {
+  background-position: -467px -129px;
+}
+#navi_global #gn_14 a {
+  width: 136px;
+  background-position: -593px -43px;
+}
+#navi_global #gn_14 a:hover {
+  background-position: -593px -129px;
+}
+#navi_global #gn_15 a {
+  width: 136px;
+  background-position: -729px -43px;
+}
+#navi_global #gn_15 a:hover {
+  background-position: -729px -129px;
+}
+#navi_global #gn_16 a {
+  width: 105px;
+  background-position: -865px -43px;
+}
+#navi_global #gn_16 a:hover {
+  background-position: -865px -129px;
+}
+
+/*******/
+	div.search_wrap{
+		width:980px;
+		height: 80px;
+		margin:0 auto;
+		padding-top:12px;
+		padding-left: 80px;
+	}
+	div.search_box	{
+		width:310px;
+		float:left;
+	}
+	div.keyward	{
+		width:650px;
+		float:left;
+	}
+	div.keyward{
+		display:block;
+		margin:12px 0 0 20px;
+		float:left;
+		font-size:14px;
+	}
+	div.keyward p{
+		float:left;
+		padding:12px 0 0;
+		font-size:11px;
+	}
+	div.keyward a{
+		margin:0 0 0 10px;
+		font-size:11px;
+		color:#666;
+		width:auto;
+		display:block;
+		float:left;
+		background:#eee;
+		padding:12px 5px;
+		text-align:center;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5x; 
+	}
+	div.keyward a:hover{
+		text-decoration:none;
+		filter:alpha(opacity=50); 
+		-moz-opacity: 0.5; 
+		opacity: 0.5; 
+	}
+
+/*5の倍数の日用*/
+div#day_x5pt5{
+	display:none;
+}
+
+/*========================  スライド  ========================*/
+div#slide {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+  width: 100%;
+	height: 165px;
+}
+div#slide:before, div#slide:after {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 165px;
+  content: "";
+  opacity: 0.4;
+  background-color: #000;
+}
+div#slide:before {
+  right: 50%;
+  margin-right: 485px;
+}
+div#slide:after {
+  left: 50%;
+  margin-left: 485px;
+}
